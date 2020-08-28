@@ -4,6 +4,6 @@ public class StaticConfig {
 
     public static final String TOPIC = "email_service";
     public static final String GROUP = "group_id";
-    public static final String SERVER_CONFIG = "127.0.0.1:9092";
+    public static final String SERVER_CONFIG = "kafka:9092";
 
 }

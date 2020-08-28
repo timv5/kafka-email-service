@@ -8,18 +8,10 @@ When Kafka receives a message it sends a message to receiver.
 It is possible to run application in DEV or PROD mode. Configurations are located in application-dev.properties and application-prod.properties
 
 ## Prequences
-- Maven, Java, Docker
-
-## Run the application:
-In application root directory run:
-    - mvn clean install
-Run as a DEV profile in /target/ directory:
-    - java -jar -Dspring.profiles.active=dev kafka-email-service-1.0-SNAPSHOT.jar
-Run as a PROD profile:
-    - java -jar -Dspring.profiles.active=prod kafka-email-service-1.0-SNAPSHOT.jar   
-
- 
-## Run kafka and zookeeper
+- Maven, Java -> optional if you change any code
+- Docker (docker compose) -> if you are only running the application installed docker is enough
+    
+## Run the application (second option):
 In root directory run: 
     - docker-compose -f docker-compose up -d
 
